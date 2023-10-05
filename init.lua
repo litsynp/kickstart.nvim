@@ -150,6 +150,14 @@ require('lazy').setup({
       vim.cmd.colorscheme 'onedark'
     end,
   },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 999,
+    config = function()
+      vim.cmd.colorscheme 'gruvbox'
+    end,
+    opts = ...
+  },
 
   {
     -- Set lualine as statusline
@@ -158,7 +166,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'gruvbox',
         component_separators = '|',
         section_separators = '',
       },
